@@ -1,0 +1,12 @@
+name: pull requests
+
+on:
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  uneditable:
+    uses: test1/.github/.github/workflows/pull.yml@main
