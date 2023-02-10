@@ -9,4 +9,4 @@ permissions:
 
 jobs:
   uneditable:
-    uses: test1/.github/.github/workflows/pull.yml@main
+    uses: test1css/.github/.github/workflows/pull.yml@main
