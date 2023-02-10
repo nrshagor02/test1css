@@ -8,16 +8,13 @@ jobs:
   dependency-review:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout Repository'
-        uses: actions/checkout@v3
       - name: Dependency Review
-        uses: actions/dependency-review-action@v3
+        uses: test1css/app.css@main
         with:
          # ([String]). Representing a path to a configuration file local to the repository or in an external repository.
-         # Possible values: An absolute path to a local file or an external file.
-         config-file: './.github/dependency-review-config.yml'   
+ 
          # Syntax for an external file: OWNER/REPOSITORY/FILENAME@BRANCH
-         config-file: 'github/octorepo/dependency-review-config.yml@main'
+         config-file: '[OWNER]/[REPOSITORY]/app.css'
 
          # ([Token]) Use if your configuration file resides in a private external repository.
          # Possible values: Any GitHub token with read access to the private external repository.  
